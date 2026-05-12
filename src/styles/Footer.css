@@ -1,0 +1,33 @@
+.footer {
+  padding: 2rem 4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: var(--white);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.footer-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--sienna);
+}
+.footer-link {
+  color: var(--sienna);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.footer-link:hover { opacity: 0.7; }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.8rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
+  }
+}

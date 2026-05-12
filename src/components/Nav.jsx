@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-
-const sections = ['about','projects','blog','resume','contact'];
+import '../styles/Nav.css';
+import { NAV, SITE } from '../strings';
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState('');
+  const [active, setActive]     = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
-      const current = sections.find(id => {
+      const current = NAV.sections.find(id => {
         const el = document.getElementById(id);
         if (!el) return false;
         const rect = el.getBoundingClientRect();
@@ -22,37 +22,29 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navStyle = {
-    position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-    padding: '1rem 4rem',
-    background: scrolled ? 'rgba(253,248,244,0.92)' : 'transparent',
-    backdropFilter: scrolled ? 'blur(12px)' : 'none',
-    borderBottom: scrolled ? '1px solid #ecddd3' : '1px solid transparent',
-    transition: 'all 0.3s ease',
-  };
-
   return (
-    <nav style={navStyle}>
-      <a href="#home" style={{ fontFamily:'var(--font-display)', fontStyle:'italic', fontSize:'1.3rem', color:'var(--sienna)', fontWeight:600 }}>AC</a>
-
-      <ul style={{ display:'flex', gap:'2rem', listStyle:'none' }}>
-        {sections.map(s => (
-          <li key={s}>
-            <a
-              href={`#${s}`}
-              style={{
-                fontSize:'0.82rem', fontWeight: 400,
-                color: active === s ? 'var(--sienna)' : 'var(--muted)',
-                letterSpacing:'0.05em', transition:'color 0.2s',
-                borderBottom: active === s ? '1px solid var(--sienna)' : '1px solid transparent',
-                paddingBottom:'2px',
-                textTransform: 'capitalize',
-              }}
-            >{s}</a>
-          </li>
+    <>
+      <nav className={`nav ${scrolled ? 'scrolled' : 'top'}`}>
+        <a href="#home" className="nav-logo">{SITE.initials}</a>
+        <ul className="nav-links">
+          {NAV.sections.map(s => (
+            <li key={s}>
+              <a href={`#${s}`} className={`nav-link ${active === s ? 'active' : ''}`}>{s}</a>
+            </li>
+          ))}
+        </ul>
+        <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Toggle menu">
+          <span /><span /><span />
+        </button>
+      </nav>
+      <div className={`nav-mobile-menu ${menuOpen ? 'open' : ''}`}>
+        {NAV.sections.map(s => (
+          <a key={s} href={`#${s}`}
+            className={`nav-mobile-link ${active === s ? 'active' : ''}`}
+            onClick={() => setMenuOpen(false)}
+          >{s}</a>
         ))}
-      </ul>
-    </nav>
+      </div>
+    </>
   );
 }
