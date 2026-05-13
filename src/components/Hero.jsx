@@ -16,8 +16,7 @@ export default function Hero() {
                 {HERO.eyebrow}
               </div>
               <h1 className="hero-heading fade-up" style={{ animationDelay: '0.15s' }}>
-                {HERO.firstName}<br />
-                <em>{HERO.lastName}</em>
+                {HERO.firstName} <em>{HERO.lastName}</em>
               </h1>
               <p className="hero-subtitle fade-up" style={{ animationDelay: '0.25s' }}>
                 {HERO.subtitle}

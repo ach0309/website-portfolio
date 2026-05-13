@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'Aeon Chavez',
   initials: 'AC',
-  location: 'Milford, CT',
+  location: 'CT/NY',
   email: 'aeonchavez03@gmail.com',
   linkedin: 'linkedin.com/in/aeonchavez',
   linkedinUrl: 'https://linkedin.com/in/aeonchavez',
@@ -10,7 +10,7 @@ export const SITE = {
   githubUrl: 'https://github.com/ach0309',
   website: 'aeonchavez.info',
   websiteUrl: 'http://aeonchavez.info',
-  copyright: '© 2026 · Milford, CT',
+  copyright: '© 2026 · CT/NY',
 };
 
 // ─── NAV ─────────────────────────────────────────────────────────────────────
@@ -37,7 +37,7 @@ export const HERO = {
     'ReactJS',
     'SQL',
     'Data Visualization',
-    'Bilingual EN/TL',
+    'Bilingual',
   ],
 };
 
@@ -47,12 +47,12 @@ export const ABOUT = {
   heading: 'Background & Interests',
   subheading: 'A little bit about who I am, what drives me, and what I bring to the table.',
   bio: [
-    `I'm a software developer and data scientist based in **Milford, CT**, with 2+ years at IBM shipping enterprise features across storage and cloud UI teams. After a period of caregiving, I redirected my focus toward **data science and AI** — areas I find genuinely exciting and impactful.`,
+    `I'm a software developer and data scientist based in **Milford, CT**, with 2 years at IBM shipping enterprise features across storage and cloud UI teams. After a period of caregiving, I redirected my focus toward **data science and AI** — areas I find genuinely exciting and impactful.`,
     `Today I'm a **Data Science Fellow at The Knowledge House**, building ML solutions, working through real datasets, and applying the engineering discipline I honed at IBM to data problems. I care about building things that are useful, well-documented, and stakeholder-ready.`,
     `Outside of code, I'm drawn to the overlap of **AI and small business impact**. My hackathon project Lexi/Crust was built for a real bakery and validated live by 50 attendees — that kind of tangible impact is what motivates me.`,
   ],
   highlights: [
-    { icon: '🏗️', title: '2+ Years at IBM', desc: 'Shipped enterprise features on Storage Fusion & Spectrum Protect — UI, APIs, CI/CD.' },
+    { icon: '🏗️', title: '2 Years at IBM', desc: 'Shipped enterprise features on Storage Fusion & Spectrum Protect — UI, APIs, CI/CD.' },
     { icon: '📊', title: 'Data Science Fellow', desc: '6-month accelerated fellowship at The Knowledge House — ML, feature engineering, stakeholder insights.' },
     { icon: '🤖', title: 'AI Hackathon Builder', desc: 'Built a live chatbot + CRM agent for a real bakery — validated by ~50 attendees, exhausted the API budget on launch.' },
     { icon: '🌐', title: 'Bilingual', desc: 'Fluent in English and Tagalog — great for diverse teams and stakeholder communication.' },
@@ -170,11 +170,11 @@ export const PROJECTS_CONTENT = {
 // ─── BLOG ────────────────────────────────────────────────────────────────────
 export const BLOG = {
   sectionLabel: 'Blog',
-  heading: 'LinkedIn Posts',
+  heading: 'Blog',
   subheading: 'Thoughts on data science, AI, and the journey — written for the community.',
   emptyIcon: '✍️',
-  emptyTitle: 'Posts coming soon',
-  emptyDesc: 'Each LinkedIn post you share will appear here as a beautiful card. Paste them into the strings.js file to get started.',
+  emptyTitle: 'Blog posts coming soon',
+  emptyDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
   viewOnLinkedIn: '↗ View on LinkedIn',
   // Add your LinkedIn posts here:
   posts: [
@@ -193,7 +193,7 @@ export const RESUME = {
   heading: 'Experience & Skills',
   subheading: 'Software developer turned data scientist — here\'s the full picture.',
   summary:
-    'Software developer with 2+ years at IBM shipping enterprise product features; following a period of caregiving and career transition, now specializing in data science and AI through applied project work and a competitive fellowship.',
+    'Software developer with 2 years at IBM shipping enterprise product features; following a period of caregiving and career transition, now specializing in data science and AI through applied project work and a competitive fellowship.',
   contactItems: [
     { icon: '📍', text: SITE.location },
     { icon: '✉️', text: SITE.email,    href: `mailto:${SITE.email}` },
