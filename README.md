@@ -1,4 +1,5 @@
 # website-portfolio
+```
 src/
 ├── strings.js              ← all text content
 ├── index.css               ← shared tokens & utilities
@@ -24,3 +25,4 @@ src/
 │   └── Footer.css
 └── hooks/
     └── useWindowSize.js
+```
