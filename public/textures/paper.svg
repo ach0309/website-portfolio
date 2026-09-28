@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch" seed="12"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer></filter></defs>
+<rect width="600" height="600" filter="url(#grain)"/>
+<g fill="#887864" opacity=".16"><circle cx="28" cy="42" r=".6"/><circle cx="285" cy="195" r=".5"/><circle cx="119" cy="240" r=".7"/><circle cx="511" cy="128" r=".6"/><circle cx="480" cy="322" r=".8"/><circle cx="62" cy="476" r=".6"/><circle cx="388" cy="568" r=".6"/><circle cx="265" cy="507" r=".6"/></g>
+<g stroke="#968571" stroke-width=".5" opacity=".15"><path d="m186 98 2 1m241 318 1 3m281 488 2-1m89 530 1 2m520 467 2 2m443 35 2 1"/></g></svg>

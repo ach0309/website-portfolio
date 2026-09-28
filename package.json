@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build && node scripts/prerender.cjs",
+    "preview": "node scripts/preview.cjs",
+    "test:contact": "node --test tests/contact.test.cjs"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],

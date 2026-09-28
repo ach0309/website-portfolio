@@ -1,5 +1,10 @@
 node_modules/
 build/
 .env
+.env.*
+!.env.example
 .DS_Store
 notes.txt
+.claude/
+docs/
+docs/portfolio-draft-plan.md

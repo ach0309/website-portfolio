@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Contact form registration</title>
+  </head>
+  <body>
+    <!-- Kept outside React's root so Netlify's form processing cannot alter hydrated markup. -->
+    <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      netlify-honeypot="website_url"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="inquiry" type="text" />
+      <input name="company" type="text" />
+      <input name="link" type="url" />
+      <textarea name="message"></textarea>
+      <input name="website_url" type="text" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Each route has prerendered HTML. No SPA catch-all rewrite is needed.
+# Enable form detection and add the email notification in Netlify's Forms UI.
